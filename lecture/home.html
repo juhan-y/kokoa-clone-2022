@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <link
+      rel="shortcut icon"
+      href="https://assets.nflxext.com/ffe/siteui/common/icons/nficon2016.ico"
+    />
+    <title>Home - My first website.</title>
+    <link href="styles.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body {
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      div {
+        background-color: teal;
+        width: 200px;
+        height: 200px;
+      }
+      @media screen and (max-width: 600px) {
+        div {
+          background-color: tomato;
+        }
+      }
+      @media screen and (min-width: 601px) and (max-width: 1200px) {
+        div {
+          background-color: wheat;
+        }
+      }
+      @media screen and (min-width: 1201px) {
+        div {
+          background-color: aquamarine;
+        }
+      }
+      span {
+        font-size: 36px;
+      }
+      @media screen and (orientation: landscape) {
+        span {
+          display: none;
+        }
+      }
+      @media print {
+        body {
+          background-color: tomato;
+        }
+      }
+    </style>
+    <meta charset="utf-8" />
+    <meta name="description" content="This is my website" />
+  </head>
+  <body>
+    <div></div>
+    <span>Please flip your phone. :(</span>
+  </body>
+</html>

@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+:root {
+  font-family: "Nunito", sans-serif;
+}
+body {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.big-window {
+  width: 300px;
+  height: 700px;
+  margin: 60px 45px;
+  box-shadow: 2px 2px 90px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.first-line {
+  width: 85%;
+  margin: 35px 25px;
+  display: flex;
+  justify-content: space-between;
+}
+.first-line i {
+  opacity: 0.6;
+}
+.second-line {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.second-line img {
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  box-shadow: 2px 2px 20px 1px rgba(250, 130, 77, 0.7);
+}
+.title {
+  margin: 30px 0 10px 0;
+  font-size: 22px;
+  font-weight: 600;
+}
+.genre {
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.4);
+  font-weight: 600;
+}
+
+.third-line {
+  width: 90%;
+  margin: 40px 0 25px 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.shuffle {
+  border: 1px solid black;
+  border-radius: 20px;
+  width: 100px;
+  height: 40px;
+  display: flex;
+  font-size: 15px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: black;
+  box-shadow: 2px 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+.heart {
+  width: 100px;
+  height: 40px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: 2px 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+.heart span {
+  opacity: 0.6;
+}
+ul {
+  display: block;
+  list-style-type: none;
+  margin: 0 0 0 -32px;
+}
+li {
+  margin: 20px 0px;
+  display: flex;
+}
+li img {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+}
+.song-list {
+  width: 200px;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.song {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.artist {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 5px;
+}
+.song-name {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.dots {
+  opacity: 0.4;
+}
+.present-song {
+  position: relative;
+}
+.present-song > i {
+  position: absolute;
+  color: white;
+  top: 11px;
+  left: 9px;
+  transform: rotateZ(270deg);
+}
+
+.play-bar {
+  width: 270px;
+  height: 60px;
+  background-color: black;
+  border-radius: 30px;
+  box-shadow: 2px 2px 20px 1px rgba(0, 0, 0, 0.3);
+  display: flex;
+  margin-bottom: 10px;
+  top: 690px;
+  left: 60px;
+  position: fixed;
+}
+.play-bar__column:first-child {
+  width: 50%;
+  display: flex;
+  color: white;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  margin-left: 30px;
+  padding: 10px 0;
+}
+.play-bar__artist {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.play-bar__column:last-child {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.big-window:nth-child(2) .second-line img {
+  height: 200px;
+  width: 200px;
+  border-radius: 15px;
+  box-shadow: 2px 15px 20px 1px rgba(250, 130, 77, 0.9);
+  margin-top: 30px;
+}
+
+.big-window:nth-child(2) .song-name {
+  margin-top: 50px;
+  font-size: 20px;
+}
+
+.big-window:nth-child(2) .artist {
+  margin-top: 15px;
+  font-size: 15px;
+}
+.music-time {
+  display: flex;
+  margin-top: 40px;
+  width: 80%;
+  justify-content: space-between;
+  font-size: 10px;
+}
+.music-time span {
+  opacity: 0.5;
+}
+.music-bar {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-top: 10px;
+}
+.past {
+  width: 65%;
+  background-color: black;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  height: 5px;
+}
+.present {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: black;
+  position: absolute;
+  left: 140px;
+  top: -2px;
+}
+.future {
+  width: 40%;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  height: 5px;
+}
+
+.music-play {
+  display: flex;
+  width: 80%;
+  margin-top: 90px;
+  justify-content: space-between;
+  align-items: center;
+}
+.play-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  background-color: black;
+  color: white;
+  box-shadow: 2px 2px 20px 1px rgba(0, 0, 0, 0.3);
+}
+.play-icon i {
+  margin-left: 24px;
+}
+.music-play > i:first-child {
+  opacity: 0.3;
+}
+.music-play > i:nth-child(5) {
+  opacity: 0.3;
+}

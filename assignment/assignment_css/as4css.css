@@ -1,0 +1,99 @@
+body {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.background {
+  background-color: rgb(107, 188, 190);
+  width: 575px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.background__first {
+  display: flex;
+  width: 85px;
+  height: 80px;
+  background-color: rgb(107, 188, 190);
+  justify-content: space-between;
+  align-items: center;
+  animation: firstAnimation 1.9s linear infinite;
+}
+
+@keyframes firstAnimation {
+  0% {
+    transform: rotateZ(0);
+  }
+  25% {
+    transform: rotateZ(180deg);
+  }
+  50% {
+    transform: rotateZ(180deg);
+  }
+  75% {
+    transform: rotateZ(360deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+.first {
+  display: flex;
+  background-color: white;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.background__second {
+  display: flex;
+  width: 85px;
+  height: 80px;
+  background-color: rgb(107, 188, 190);
+  justify-content: space-between;
+  align-items: center;
+}
+.second {
+  display: flex;
+  background-color: white;
+  width: 10px;
+  height: 45px;
+}
+.second:first-child {
+  animation: secondAnimation 1s ease-in-out infinite;
+}
+.second:nth-child(2) {
+  animation: secondAnimation 1s ease-in-out infinite;
+  animation-delay: 0.1s;
+}
+.second:nth-child(3) {
+  animation: secondAnimation 1s ease-in-out infinite;
+  animation-delay: 0.2s;
+}
+.second:nth-child(4) {
+  animation: secondAnimation 1s ease-in-out infinite;
+  animation-delay: 0.3s;
+}
+.second:last-child {
+  animation: secondAnimation 1s ease-in-out infinite;
+  animation-delay: 0.4s;
+}
+
+@keyframes secondAnimation {
+  0% {
+    height: 40px;
+  }
+  25% {
+    height: 80px;
+  }
+  75% {
+    height: 40px;
+  }
+  100% {
+    height: 40px;
+  }
+}
