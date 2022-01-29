@@ -1,0 +1,52 @@
+.user-component__phonenumber {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.surprise {
+  margin-top: 8px;
+  margin-left: 8px;
+  display: flex;
+  width: 15px;
+  height: 15px;
+  background-color: white;
+  border: 1px solid rgba(255, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: red;
+}
+.more-screen .icon-row {
+  margin-top: 30px;
+}
+.more-suggestions {
+  margin-top: 50px;
+  border-top: var(--main-border);
+  padding-top: 40px;
+}
+.more-suggestions__title {
+  margin-bottom: 30px;
+}
+.more-suggestions__icons {
+  display: flex;
+}
+.more-suggestions__icon {
+  margin-right: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.more-suggestions__icon-image {
+  width: 60px;
+  height: 60px;
+  background-color: var(--yellow);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.more-suggestions__icon-image i {
+  font-size: 32px;
+  color: white;
+}
